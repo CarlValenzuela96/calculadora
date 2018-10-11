@@ -60,5 +60,10 @@ public class CalculadoraTest {
     public void testMultiplicacion() {
         assertEquals(6, Calculadora.multiplicacion(3, 2), 0.0);
     }
+ 
+    @Test
+    public void testDividir() {
+        assertEquals(0, Calculadora.dividir(3, 0), 0.1);
+    }
     
 }
