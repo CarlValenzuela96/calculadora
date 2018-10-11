@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package com.mycompany.calculadora;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -36,9 +37,28 @@ public class CalculadoraTest {
     public void tearDown() {
     }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+    /**
+     * Test of suma method, of class Calculadora.
+     */
+    @Test
+    public void testSuma() {
+        assertEquals(6.0, Calculadora.suma(3.0, 3.0),0.0);
+    }
+
+    /**
+     * Test of resta method, of class Calculadora.
+     */
+    @Test
+    public void testResta() {  
+        assertEquals(1, Calculadora.resta(3, 2), 0.0);   
+    }
+
+    /**
+     * Test of multiplicacion method, of class Calculadora.
+     */
+    @Test
+    public void testMultiplicacion() {
+        assertEquals(6, Calculadora.multiplicacion(3, 2), 0.0);
+    }
+    
 }
