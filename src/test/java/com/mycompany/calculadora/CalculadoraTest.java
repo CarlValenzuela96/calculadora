@@ -42,7 +42,7 @@ public class CalculadoraTest {
      */
     @Test
     public void testSuma() {
-        assertEquals(5.0, Calculadora.suma(3.0, 3.0),0.0);
+        assertEquals(5.0, Calculadora.suma(2.0, 3.0),0.0);
     }
 
     /**
