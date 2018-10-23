@@ -63,7 +63,7 @@ public class CalculadoraTest {
  
     @Test
     public void testDividir() {
-        assertEquals(0, Calculadora.dividir(3, 0), 0.1);
+        assertEquals(1, Calculadora.dividir(3, 3), 0.1);
     }
     
 }
